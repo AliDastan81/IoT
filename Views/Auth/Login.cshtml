@@ -1,0 +1,37 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "ورود";
+}
+
+<h2>ورود</h2>
+<br />
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+    <br />
+}
+<form asp-action="Login" method="post">
+    <div class="form-group">
+        <label asp-for="Email">ایمیل</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for="Password">پسورد</label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary mt-3">ورود</button>
+    <br /><br />
+    <p>حساب نداری؟ <a asp-action="Signup" asp-controller="Auth">ثبت‌نام کن</a></p>
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

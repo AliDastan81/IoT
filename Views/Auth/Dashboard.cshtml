@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "داشبورد";
+    var userEmail = Context.Session.GetString("user_email");
+}
+
+<h2>🎉 خوش آمدی به داشبورد</h2>
+
+<div class="alert alert-success mt-3">
+    @if (!string.IsNullOrEmpty(userEmail))
+    {
+        <strong>@userEmail</strong> <span>، خوش آمدی!</span>
+    }
+    else
+    {
+        <strong>کاربر عزیز</strong> <span>، خوش آمدی!</span>
+    }
+</div>
+
+<div class="mt-4">
+    <h4>منوی سریع</h4>
+    <ul class="list-group">
+        <li class="list-group-item"><a href="/Devices">📡 مشاهده دستگاه‌ها</a></li>
+        <li class="list-group-item"><a href="/Profile">👤 پروفایل من</a></li>
+        <li class="list-group-item"><a href="/Auth/Logout">🚪 خروج</a></li>
+    </ul>
+</div>
