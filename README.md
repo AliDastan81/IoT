@@ -40,7 +40,6 @@ Login.cshtml
 Program.cs
 appsettings.json
 
-
 ---
 
 ## ⚙️ Getting Started
@@ -48,15 +47,15 @@ appsettings.json
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-
+git clone https://github.com/AliDastan81/IoT.git
+cd IoT
+```
 ### 2. Configure Supabase settings
 Update appsettings.json:
 
 "Supabase": {
-  "Url": "https://your-project-id.supabase.co",
-  "ApiKey": "your-anon-public-api-key"
+  "Url": "https://wbsqpoepkchkmdmukvfk.supabase.co",
+  "ApiKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indic3Fwb2Vwa2Noa21kbXVrdmZrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI5OTY0NTMsImV4cCI6MjA2ODU3MjQ1M30.2hgUuyYvTwZnzhDGx6VSIoDb-VDcssxNB33dSCrO5xk"
 }
 
 ### 3. Run the application
