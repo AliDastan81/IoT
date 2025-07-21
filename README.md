@@ -16,7 +16,7 @@ This project demonstrates how to implement **user authentication (signup and log
 
 ## 🧰 Technologies Used
 
-- ASP.NET Core MVC (.NET 6/7)
+- ASP.NET Core MVC (.NET 8)
 - Supabase (Auth + Database + REST API)
 - HttpClient
 - System.Text.Json
@@ -26,19 +26,21 @@ This project demonstrates how to implement **user authentication (signup and log
 
 ## 📦 Project Structure
 
+```plaintext
 /Controllers
-AccountController.cs
+    AccountController.cs
 /Models
-RegisterViewModel.cs
-LoginViewModel.cs
+    RegisterViewModel.cs
+    LoginViewModel.cs
 /Services
-SupabaseService.cs
+    SupabaseService.cs
 /Views
-/Account
-Register.cshtml
-Login.cshtml
+    /Account
+        Register.cshtml
+        Login.cshtml
 Program.cs
 appsettings.json
+```
 
 ---
 
